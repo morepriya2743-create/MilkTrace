@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MilkTrace | Farmer Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <h2>🥛 MilkTrace</h2>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="farmers.html">Farmers</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="#">Centres</a>
+            <a href="#">Milk Price</a>
+
+            <a href="#">Trace Milk</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Heading -->
+
+    <section class="page-heading">
+
+        <h1>👨‍🌾 Farmer Registration</h1>
+
+        <p>
+            Register farmers and their livestock
+            to improve dairy supply chain transparency.
+        </p>
+
+    </section>
+
+
+    <!-- Registration Form -->
+
+    <section class="form-section">
+
+        <form  id="farmerForm">
+
+            <label>Farmer Name</label>
+
+            <input
+                type="text"
+                id="farmerName"
+                placeholder="Enter farmer name"
+                required
+            >
+
+
+            <label>Farmer ID</label>
+
+            <input
+                type="text"
+                id="farmerId"
+                placeholder="Enter farmer ID"
+                required
+>
+            >
+
+
+            <label>Village / Region</label>
+
+            <input
+                type="text"
+                id="village"
+                placeholder="Enter village or region"
+                required
+            >
+
+
+            <label>Animal Type</label>
+
+            <select id="animalType" required>
+
+                <option value="">
+                    Select animal
+                </option>
+
+                <option>
+                    Cow
+                </option>
+
+                <option>
+                    Buffalo
+                </option>
+
+                <option>
+                    Goat
+                </option>
+
+                <option>
+                    Sheep
+                </option>
+
+            </select>
+
+
+            <label>Number of Animals</label>
+
+            <input
+                type="number"
+                id="animalCount"
+                min="1"
+                placeholder="Enter number of animals"
+                required
+            >
+
+
+            <label>Estimated Daily Milk (Litres)</label>
+
+            <input
+                type="number"
+                id="milkProduction"
+                min="0"
+                placeholder="Example: 25"
+                required
+            >
+
+
+            <label>Collection Centre</label>
+
+            <select  id="collectionCentre" required>
+
+                <option value="">
+                    Select collection centre
+                </option>
+
+                <option>
+                    Centre A
+                </option>
+
+                <option>
+                    Centre B
+                </option>
+
+                <option>
+                    Centre C
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                Register Farmer
+            </button>
+
+        </form>
+
+        <div id="registrationMessage"></div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 MilkTrace |
+            Dairy Supply Chain Transparency
+        </p>
+
+    </footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>

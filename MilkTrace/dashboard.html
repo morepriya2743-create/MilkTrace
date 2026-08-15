@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MilkTrace | Farmer Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h2>🥛 MilkTrace</h2>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="farmers.html">Farmers</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="#">Centres</a>
+
+        <a href="#">Milk Price</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-heading">
+
+    <h1>📊 Farmer Dashboard</h1>
+
+    <p>
+        View registered farmers and their milk production.
+    </p>
+
+</section>
+
+
+<section class="dashboard">
+
+    <div class="dashboard-card">
+
+        <h2 id="totalFarmers">0</h2>
+
+        <p>Total Farmers</p>
+
+    </div>
+
+
+    <div class="dashboard-card">
+
+        <h2 id="totalAnimals">0</h2>
+
+        <p>Total Animals</p>
+
+    </div>
+
+
+    <div class="dashboard-card">
+
+        <h2 id="totalMilk">0 L</h2>
+
+        <p>Daily Milk Production</p>
+
+    </div>
+
+</section>
+
+
+<section class="farmer-table-section">
+
+    <h2>Registered Farmers</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Farmer ID</th>
+
+                <th>Name</th>
+
+                <th>Village</th>
+
+                <th>Animal</th>
+
+                <th>Animals</th>
+
+                <th>Milk / Day</th>
+
+                <th>Centre</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="farmerTable">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 MilkTrace | Dairy Supply Chain Transparency
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
